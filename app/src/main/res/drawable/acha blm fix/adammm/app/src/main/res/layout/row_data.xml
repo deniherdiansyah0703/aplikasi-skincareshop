@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner">
+
+    <ImageView
+        android:gravity="center"
+        android:background="@drawable/nyamill"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/listID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/listStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/listJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pesanan"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/listDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Deskripsi"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/listHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:padding="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/nyamill" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/abril"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Login"
+                    android:textStyle="bold"
+                    android:textSize="50dp"/>
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/gray"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20dp"
+                        android:text="Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:fontFamily="@font/medium"
+                        android:background="@drawable/lavender_border"
+                        android:backgroundTint="@color/gray"
+                        android:id="@+id/txEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="textEmailAddress"/>
+
+                    <TextView
+                        android:fontFamily="@font/medium"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20dp"
+                        android:text="Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:fontFamily="@font/medium"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/lavender_border"
+                        android:id="@+id/txPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="textPassword"/>
+
+                    <Button
+                        android:fontFamily="@font/medium"
+                        android:gravity="center"
+                        android:id="@+id/btnLogin"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Login" />
+                    <TextView
+                        android:id="@+id/tvCreateAccount"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
